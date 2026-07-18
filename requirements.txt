@@ -1,0 +1,12 @@
+torch
+torchvision
+ultralytics
+opencv-python
+albumentations
+numpy
+pandas
+scikit-learn
+wandb
+pyyaml
+pytest
+streamlit
