@@ -1,0 +1,16 @@
+data: data/processed/pidray/pidray_data.yaml
+
+model: yolo11n.pt
+
+epochs: 3
+batch: 8
+imgsz: 640
+
+project: runs
+name: pidray_yolo11n_baseline
+
+device: 0
+
+wandb:
+  project: xray-threat-detection
+  entity: null

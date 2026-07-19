@@ -24,6 +24,9 @@ outputs/reports/*
 !outputs/predictions/.gitkeep
 !outputs/reports/.gitkeep
 
+# Training runs
+runs/
+
 # Notebooks
 .ipynb_checkpoints/
 
