@@ -21,6 +21,9 @@ class TrainConfig:
     wandb_project: str
     wandb_entity: Optional[str] = None
 
+    workers: int = 2
+    cache: bool = False
+
 
     @classmethod
     def from_yaml(
