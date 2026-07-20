@@ -24,7 +24,7 @@ class Trainer:
         results = model.train(
             data=self.config.data, epochs=self.config.epochs, batch=self.config.batch,
             imgsz=self.config.imgsz, project=self.config.project, name=self.config.name,
-            device=self.config.device,
+            device=self.config.device, patience=self.config.patience,
         )
 
         logger.info(f"Training complete. Best weights: {model.trainer.best}")

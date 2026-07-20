@@ -3,6 +3,7 @@ data: data/processed/pidray/pidray_data.yaml
 model: yolo11n.pt
 
 epochs: 3
+patience: 5          # stop if val mAP hasn't improved for 5 epochs
 batch: 8
 imgsz: 640
 

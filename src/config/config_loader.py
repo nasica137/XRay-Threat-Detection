@@ -24,6 +24,8 @@ class TrainConfig:
     workers: int = 2
     cache: bool = False
 
+    patience: int = 10   # Ultralytics' own default, so existing yaml files without this key still load
+
 
     @classmethod
     def from_yaml(
