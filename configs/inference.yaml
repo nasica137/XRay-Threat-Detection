@@ -1,0 +1,18 @@
+weights: runs/pidray_yolo11n_baseline/weights/best.pt
+
+data_dir: data/processed/pidray
+
+conf: 0.25
+iou: 0.5
+
+imgsz: 640
+device: 0
+
+num_examples: 3
+
+save_dir: outputs/evaluation
+
+
+wandb:
+  project: xray-threat-detection
+  entity: null
