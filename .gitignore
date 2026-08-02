@@ -19,6 +19,7 @@ checkpoints/
 wandb/
 
 # Outputs
+outputs/
 outputs/predictions/*
 outputs/reports/*
 !outputs/predictions/.gitkeep
