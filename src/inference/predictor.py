@@ -8,7 +8,6 @@ from src.detection.objects import (
 )
 
 
-
 class Predictor:
 
 
@@ -37,7 +36,6 @@ class Predictor:
 
         result = results[0]
 
-
         detections = []
 
 
@@ -50,13 +48,13 @@ class Predictor:
             )
 
 
-            cls_id = int(
+            class_id = int(
                 box.cls[0]
             )
 
 
             label = (
-                result.names[cls_id]
+                result.names[class_id]
             )
 
 
@@ -74,12 +72,13 @@ class Predictor:
                     confidence=confidence,
 
                     bbox=BoundingBox(
-                        x1,
-                        y1,
-                        x2,
-                        y2
+                        x1=x1,
+                        y1=y1,
+                        x2=x2,
+                        y2=y2
                     )
                 )
+
             )
 
 

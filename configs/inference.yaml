@@ -1,4 +1,4 @@
-weights: runs/pidray_yolo11n_baseline/weights/best.pt
+weights: runs/detect/pidray_yolo11n_baseline/weights/best.pt
 
 data_dir: data/processed/pidray
 
