@@ -398,25 +398,23 @@ def main():
         yaml.dump(
 
             {
-                "path":
-                    str(
-                        OUT_DIR.resolve()
-                    ),
+                "path": str(OUT_DIR.resolve()),
 
-                "val":
-                    f"images/{split}",
+                # Required by Ultralytics even though it is unused
+                "train": "images/train",
 
-                "names":
-                    names
+                # Evaluation split
+                "val": f"images/{split}",
+
+                "names": names,
             },
 
             open(
-                OUT_DIR /
-                f"pidray_{split}_eval.yaml",
+                OUT_DIR / f"pidray_{split}_eval.yaml",
                 "w"
             ),
 
-            sort_keys=False
+            sort_keys=False,
         )
 
 
