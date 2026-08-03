@@ -1,41 +1,81 @@
+# =====================
 # Python
+# =====================
 __pycache__/
-*.pyc
+*.py[cod]
+*.so
 .venv/
 venv/
+env/
 *.egg-info/
 
-# Data & model artifacts — never commit these directly
+build/
+dist/
+
+
+# =====================
+# Data
+# =====================
 data/raw/*
 data/processed/*
+
 !data/raw/.gitkeep
 !data/processed/.gitkeep
+
+
+# =====================
+# Models / weights
+# =====================
 *.pt
 *.pth
 *.onnx
 checkpoints/
 
+
+# =====================
+# Ultralytics / training
+# =====================
+runs/
+.ultralytics/
+
+
+# =====================
 # Experiment tracking
+# =====================
 wandb/
 
+
+# =====================
 # Outputs
-outputs/
-outputs/predictions/*
-outputs/reports/*
+# =====================
+outputs/*
 !outputs/predictions/.gitkeep
 !outputs/reports/.gitkeep
 
-# Training runs
-runs/
 
+# =====================
+# Testing
+# =====================
+.pytest_cache/
+.coverage
+
+
+# =====================
 # Notebooks
+# =====================
 .ipynb_checkpoints/
 
-# Secrets / env
+
+# =====================
+# Secrets
+# =====================
 .env
 *.key
 
-# OS / editor cruft
+
+# =====================
+# OS / IDE
+# =====================
 .DS_Store
 .vscode/
 .idea/
